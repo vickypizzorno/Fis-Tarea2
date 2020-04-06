@@ -58,5 +58,5 @@ public class Usuario {
             return false;
         }
         Usuario user = (Usuario) obj;
-        return saldo = user.saldo;
+        return this.getCedula() == user.getCedula();
     }
