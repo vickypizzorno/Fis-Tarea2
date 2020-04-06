@@ -50,3 +50,13 @@ public class Usuario {
     public void setSaldo(float saldo){
         this.saldo=saldo;
     }
+    @Override
+    public boolean equals(Object obj){
+        
+        if (obj == this) return true;
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Usuario user = (Usuario) obj;
+        return saldo = user.saldo;
+    }
